@@ -455,7 +455,7 @@ testimonial blockquote {
 }
 
 .proximamente-imagen {
-    background-image: url(img/fondo/fondo-proximamente.jpg);
+    background-image: url(../img/fondo/fondo-proximamente.jpg);
     background-position: center center;
     background-size: cover;
 }
