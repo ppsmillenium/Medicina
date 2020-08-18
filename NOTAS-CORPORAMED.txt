@@ -1,0 +1,17 @@
+-- Corporamed webs de referencia
+
+- https://www.gdx.net/
+ -https://www.greatplainslaboratory.com/
+
+-Menú
+Lista de pruebas
+Complementos
+Área Privada Clientes
+Contactar
+
+-- Color del logo
+#0d2139
+
+-- Mail sophie
+sophie@corporamed.com
+

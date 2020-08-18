@@ -1,0 +1,528 @@
+/*** HTML ***/
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/** Globales **/
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+.no-margen {
+    margin: 0;
+}
+
+
+/**** Utilidades ****/
+
+.seccion {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.min-line-height {
+    line-height: 1.5;
+}
+
+.txt-blanco {
+    color: #ffffff;
+}
+
+.marginCero {
+    margin: 0;
+}
+
+
+/* Escalar imagen */
+
+.scale:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/** Botones **/
+
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    /*display: inline-block;*/
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+    border: 1px solid #000000;
+}
+
+@media (max-width: 767px) {
+    .contenido-contacto {
+        color: #ffffff;
+    }
+    .boton {
+        color: #ffffff;
+        margin-top: 8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 100%;
+        border-radius: 2rem;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.boton-partners {
+    margin-top: 1rem;
+    background-color: #71b100;
+    color: #ffffff!important;
+    /*border-radius: 2rem;*/
+}
+
+.boton-amarillo {
+    background-color: #e08709;
+}
+
+
+/** Cabecera **/
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: left;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .header-h1-align {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.site-header.inicio {
+    background-image: url(../img/medico-vacuna-1920.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+    min-height: 60rem;
+    border-bottom: 1px solid #0d2139;
+}
+
+.contenido-header div h1 {
+    color: #000000;
+    font-weight: 400;
+    padding-bottom: 6rem;
+    max-width: 60rem;
+    line-height: 6rem;
+}
+
+.contenedor-barra {
+    background-color: #0d2139;
+}
+
+.barra {
+    padding: 1rem 1rem;
+    background-color: #0d2139;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/*** Navegación móvil ***/
+
+
+/* Desplegable */
+
+ul,
+ol {
+    list-style: none;
+}
+
+.nav {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.nav>li {
+    float: left;
+    padding: 0 2rem;
+}
+
+.nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    /*font-size: 1.8rem;*/
+    /*margin-right: 2rem;*/
+    padding: 5px 5px;
+    display: block;
+}
+
+.nav a:hover {
+    color: yellow;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+}
+
+.nav li:hover>ul {
+    padding: 0 0 1rem 5rem;
+    width: 10rem;
+    cursor: pointer;
+    display: block;
+    background-color: #0d2139;
+}
+
+.nav li ul:hover>li {
+    color: yellow;
+}
+
+.nav li ul li {
+    position: relative;
+    margin: 5px -40px;
+}
+
+
+/*** Iconos nosotros ***/
+
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .icono {
+        padding-top: 3rem;
+        max-width: 75%;
+    }
+}
+
+.icono {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+    padding-right: 2rem;
+}
+
+.icono img {
+    max-width: 50%;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+
+/* Aprende sobre tests*/
+
+.imagen-contacto {
+    background-image: url(../img/dudas-dark-1189.jpg);
+    background-size: cover;
+    background-position: 50% 20%;
+    height: 30rem;
+}
+
+.contenido-contacto {
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    .contenido-contacto {
+        display: flex;
+        justify-content: space-between;
+        color: #ffffff;
+        font-size: 1.8rem;
+        margin-bottom: 25%;
+    }
+}
+
+
+/* Partners */
+
+@media (max-width: 767px) {
+    .seccion-inferior {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial {
+        display: none;
+    }
+}
+
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-inferior .blog {
+    flex-basis: 60%;
+}
+
+.entrada-blog {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.entrada-blog:last-of-type {
+    margin-bottom: 0;
+}
+
+.entrada-blog .imagen {
+    width: 80rem;
+    margin-left: 37%;
+    flex-basis: 60%;
+}
+
+.entrada-blog .texto-entrada {
+    flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: 0.5rem;
+    background-color: #71b100;
+    margin-top: 1rem;
+}
+
+.texto-entrada a {
+    text-decoration: none;
+    color: black;
+}
+
+.texto-entrada span {
+    color: #e08709;
+}
+
+
+/* Destacado */
+
+.seccion-inferior .testimoniales {
+    flex-basis: calc(40% - 2rem);
+}
+
+.testimonial {
+    background-color: #71b100;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #ffffff;
+    border-radius: 2rem;
+    margin-bottom: 10rem;
+}
+
+.testimoniales p {
+    text-align: right;
+}
+
+.testimonial blockquote::before {
+    content: '';
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -1rem;
+}
+
+testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+
+/** Próximamente */
+
+@media (max-width: 767px) {
+    .proximamente-txt {
+        text-align: center;
+    }
+    .proximamente-imagen {
+        display: flex;
+        flex-direction: column;
+    }
+    .boton {
+        width: 25%;
+        margin-left: 25%;
+    }
+}
+
+.proximamente {
+    padding: 2rem 0 2rem 0;
+    border-top: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+}
+
+@media(min-width: 768px) {
+    .proximamente-txt {
+        margin: 1rem 0 1rem 0;
+        padding: 2rem;
+        width: 50rem;
+    }
+}
+
+.proximamente-imagen {
+    background-image: url(/img/fondo/fondo-proximamente.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.proximamente-txt h3 {
+    margin-top: 2rem;
+    line-height: 5rem;
+    width: 40rem;
+    height: 5rem;
+    background-color: #71b100;
+    color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.proximamente p {
+    font-size: 18px;
+}
+
+.proximamente h2 {
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+.navegacion ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.navegacion ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navegacion a:hover {
+    color: yellow;
+}
+
+.navegacion li:not(:first-child):before {
+    content: " | ";
+}
+
+.site-footer {
+    color: #ffffff;
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}
+
+.rrss i {
+    font-size: 30px;
+    padding-right: 2rem;
+}
