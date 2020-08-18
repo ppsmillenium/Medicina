@@ -94,7 +94,7 @@ h4 {
 }
 
 
-/** Botones **/
+/*** Botones ***/
 
 .boton {
     color: #ffffff;
@@ -205,8 +205,81 @@ h4 {
 
 /*** Navegación móvil ***/
 
+.respmenu {
+    display: none;
+}
 
-/* Desplegable */
+.respmenu a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ffffff;
+    max-width: 300px;
+    background: #0d2139;
+    opacity: 0.5;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+}
+
+.respmenu input[type="checkbox"],
+.respmenu .fa-bars,
+.respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+}
+
+.respmenu .fa-bars,
+.respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+}
+
+.respmenu input[type="checkbox"] {
+    opacity: 0;
+}
+
+.respmenu {
+    color: #ffffff;
+    position: relative;
+    background: #0d2139;
+    min-height: 48px;
+}
+
+.respmenu nav {
+    display: none;
+}
+
+.respmenu input:checked~nav {
+    display: block;
+    ;
+}
+
+.respmenu input:checked~.fa-bars {
+    display: none;
+}
+
+.respmenu input:not(:checked)~.fa-times {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .barra nav {
+        display: none;
+    }
+    .respmenu {
+        display: block;
+    }
+}
+
+
+/* Menú Desplegable */
 
 ul,
 ol {
