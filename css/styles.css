@@ -124,16 +124,6 @@ h4 {
     }
 }
 
-
-/*
-@media (min-width: 768px) {
-    .boton {
-        display: inline-block;
-        flex: 0 0 100%;
-        border-radius: 2rem;
-    }
-}*/
-
 .boton:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -224,7 +214,6 @@ h4 {
     border-bottom: 1px solid #ffffff;
     max-width: 300px;
     background: #0d2139;
-    opacity: 0.5;
     font-variant: small-caps;
     text-shadow: 1px 1px black;
 }
