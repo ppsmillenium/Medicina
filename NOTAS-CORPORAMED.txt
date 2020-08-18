@@ -18,3 +18,5 @@ sophie@corporamed.com
 -- ver web en github
 https://ppsmillenium.github.io/Web-Corporamed/
 
+-- Prueba gitignore
+
