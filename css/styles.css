@@ -113,14 +113,12 @@ h4 {
 }
 
 @media (max-width: 767px) {
-    .contenido-contacto {
-        color: #ffffff;
-    }
     .boton {
         color: #ffffff;
-        margin-top: 8rem;
-        min-width: 100px;
+        /* min-width: 100px; */
         display: block;
+        /* margin-top: 5rem; */
+        /* padding-top: 1rem; */
     }
 }
 
@@ -375,10 +373,20 @@ ol {
     background-size: cover;
     background-position: 50% 20%;
     height: 30rem;
+    min-width: 30rem;
 }
 
 .contenido-contacto {
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .contenido-contacto {
+        color: #ffffff;
+        display: flex;
+        justify-content: stretch;
+        flex-direction: column;
+    }
 }
 
 @media(min-width:768px) {
@@ -399,8 +407,10 @@ ol {
         display: flex;
         flex-direction: column;
     }
-    .testimonial {
-        display: none;
+    .entrada-blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -474,6 +484,12 @@ ol {
     margin-bottom: 10rem;
 }
 
+@media (max-width: 1200px) {
+    .testimonial {
+        display: none;
+    }
+}
+
 .testimoniales p {
     text-align: right;
 }
@@ -496,16 +512,13 @@ testimonial blockquote {
 /** Próximamente */
 
 @media (max-width: 767px) {
-    .proximamente-txt {
-        text-align: center;
-    }
-    .proximamente-imagen {
+    .proximamente {
         display: flex;
         flex-direction: column;
+        justify-content: space-between
     }
-    .boton {
-        width: 25%;
-        margin-left: 25%;
+    .proximamente h2 {
+        text-align: center;
     }
 }
 
@@ -524,6 +537,10 @@ testimonial blockquote {
         padding: 2rem;
         width: 50rem;
     }
+    .proximamente h2 {
+        text-align: left;
+        text-decoration: underline;
+    }
 }
 
 .proximamente-imagen {
@@ -533,9 +550,11 @@ testimonial blockquote {
 }
 
 .proximamente-txt h3 {
+    padding: 0 2rem;
+    /* text-align: center; */
     margin-top: 2rem;
     line-height: 5rem;
-    width: 40rem;
+    /* width: 20rem; */
     height: 5rem;
     background-color: #71b100;
     color: #ffffff;
@@ -544,11 +563,6 @@ testimonial blockquote {
 
 .proximamente p {
     font-size: 18px;
-}
-
-.proximamente h2 {
-    text-align: left;
-    text-decoration: underline;
 }
 
 
