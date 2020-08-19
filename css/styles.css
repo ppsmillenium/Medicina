@@ -521,6 +521,12 @@ testimonial blockquote {
     .proximamente h2 {
         text-align: center;
     }
+    .proximamente-txt h3 {
+        margin: 0 2rem;
+    }
+    .proximamente .boton {
+        margin: 0 2rem;
+    }
 }
 
 .proximamente {
