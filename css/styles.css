@@ -88,9 +88,11 @@ h4 {
 
 /* Zoom imagen botón */
 
-.scale:hover {
-    cursor: pointer;
-    transform: scale(1.1);
+@media (min-width: 800px) {
+    .scale:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 }
 
 
@@ -175,7 +177,6 @@ h4 {
 .contenido-header div h1 {
     color: #000000;
     font-weight: 400;
-    padding-bottom: 6rem;
     max-width: 60rem;
     line-height: 6rem;
 }
