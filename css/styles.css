@@ -474,7 +474,7 @@ ol {
     padding: 1rem;
     color: #ffffff;
     border-radius: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 @media (max-width: 1199px) {
@@ -518,6 +518,9 @@ testimonial blockquote {
     }
     .proximamente .boton {
         margin: 0 2rem;
+    }
+    .proximamente p {
+        margin: 2rem;
     }
 }
 
