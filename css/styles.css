@@ -486,7 +486,7 @@ ol {
 }
 
 @media (max-width: 1200px) {
-    .testimonial {
+    .testimoniales {
         display: none;
     }
 }
