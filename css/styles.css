@@ -403,7 +403,7 @@ ol {
 
 /* Partners */
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
     .seccion-inferior {
         display: flex;
         flex-direction: column;
@@ -412,14 +412,6 @@ ol {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-}
-
-@media (min-width: 768px) {
-    .entrada-blog .imagen {
-        width: 80rem;
-        margin-left: 37%;
-        flex-basis: 60%;
     }
 }
 
@@ -485,7 +477,7 @@ ol {
     margin-bottom: 10rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .testimoniales {
         display: none;
     }
