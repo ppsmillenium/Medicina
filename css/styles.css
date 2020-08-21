@@ -334,6 +334,7 @@ ol {
     font-size: 4rem;
     color: #227c98;
     text-decoration: underline dotted;
+    line-height: 1.5em;
 }
 
 @media (min-width: 768px) {
@@ -427,6 +428,7 @@ ol {
     text-decoration: underline dotted;
     color: #227c98;
     font-size: 40px;
+    line-height: 1.5em;
 }
 
 .seccion-inferior {
@@ -581,6 +583,12 @@ ol {
 .icono-prox {
     max-width: 30rem;
     padding: 3rem;
+}
+
+@media (max-width: 1200px) {
+    .icono-prox.medium-device {
+        display: none;
+    }
 }
 
 .prox-centrar-btn {
