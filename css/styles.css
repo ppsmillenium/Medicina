@@ -166,7 +166,7 @@ h4 {
 }
 
 .site-header.inicio {
-    background-image: url(../img/banner-header-sin_texto-10.png);
+    background-image: url(../img/banner-header-sin_texto-14.png);
     background-position: center center;
     background-size: cover;
     height: 80vh;
@@ -182,6 +182,7 @@ h4 {
     max-width: 100rem;
     line-height: 6rem;
     margin-bottom: 0.1px;
+    text-shadow: 0.1em 0.1em #333
 }
 
 
