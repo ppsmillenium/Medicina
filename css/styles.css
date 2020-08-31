@@ -145,16 +145,16 @@ h4 {
 /** Cabecera **/
 
 .contenido-header {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    /*width: 100%;
+    height: 700px;
+     display: flex;
+   flex-direction: column;
     justify-content: space-between;
-    text-align: center;
+    text-align: center;*/
 }
 
 @media (min-width: 768px) {
-    .contenido-header {
+    /* .contenido-header {
         text-align: left;
         flex-direction: column;
         justify-content: flex-end;
@@ -162,14 +162,17 @@ h4 {
     .header-h1-align {
         display: flex;
         justify-content: flex-end;
-    }
+    }*/
 }
 
 .site-header.inicio {
-    background-image: url(../img/banner-header-sin_texto-14.png);
+    /* background-image: url(../img/fondo-banner-corporamed-6.png);
     background-position: center center;
     background-size: cover;
-    height: 80vh;
+    width: 1600px; */
+    width: 100%;
+    height: 90vh;
+    height: 680px;
     border-bottom: 14px solid #227c98;
     margin-bottom: 8rem;
 }
@@ -207,6 +210,7 @@ h4 {
 
 .contenedor-barra {
     background-color: #0d2139;
+    border-bottom: 1px solid #ffffff;
 }
 
 .barra {
