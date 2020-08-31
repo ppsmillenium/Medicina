@@ -53,12 +53,10 @@
                 </nav>
             </div>
         </div>
-        <div class="site-header inicio">
-            <div class="contenedor contenido-header">
-                <iframe src="/banner/index.html" frameborder="0" width="100%" height="700px"></iframe>
-
-
-
+        <div id="show-banner" class="">
+            <div class="contenedor">
+                <div class="site-header inicio"></div>
+                <iframe class="position-banner" src="/banner/index.html" frameborder="0" width="100%" height="700px" onload="onMyFrameLoad(this)"></iframe>
             </div>
 
         </div>
@@ -205,7 +203,17 @@
 
     </footer>
 
+    <!-- Lee cuando ha cargado el iframe -->
+    <script>
+        /*
+                                                                        function onMyFrameLoad() {
+                                                                            
+                                                                            var clase = document.getElementById("show-banner");
 
+                                                                            clase.className = "d-block";
+                                                                        };
+                                                                        */
+    </script>
 </body>
 
 </html>
