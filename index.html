@@ -53,13 +53,14 @@
                 </nav>
             </div>
         </div>
-        <div id="show-banner" class="">
-            <div class="contenedor">
-                <div class="site-header inicio"></div>
-                <iframe class="position-banner" src="/banner/index.html" frameborder="0" width="100%" height="700px" onload="onMyFrameLoad(this)"></iframe>
-            </div>
+        <iframe id="position-banner" class="show-banner" src="/banner/index.html" frameborder="0" onload=""></iframe>
 
+        <div class="contenedor">
+            <div class="site-header inicio">
+            </div>
         </div>
+
+
     </header>
     <main class="contenedor seccion">
         <h2 class="centrar-texto">Soluciones Avanzadas en Laboratorio Clínico</h2>
@@ -203,16 +204,14 @@
 
     </footer>
 
-    <!-- Lee cuando ha cargado el iframe -->
+    <!-- Ejecuta cuando ha cargado el iframe -->
     <script>
-        /*
-                                                                        function onMyFrameLoad() {
-                                                                            
-                                                                            var clase = document.getElementById("show-banner");
+        /*function onMyFrameLoad() {
 
-                                                                            clase.className = "d-block";
-                                                                        };
-                                                                        */
+                            var clase = document.getElementById("position-banner");
+
+                            clase.className = "show-banner";
+                        };*/
     </script>
 </body>
 
