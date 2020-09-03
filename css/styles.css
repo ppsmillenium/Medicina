@@ -85,6 +85,10 @@ h4 {
     margin: 0;
 }
 
+.oculta {
+    display: none;
+}
+
 
 /* Zoom imagen botón */
 
@@ -144,14 +148,18 @@ h4 {
 
 /** Cabecera **/
 
+
+/***** SE EMPLEABA CON EL OTRO BANNER 
+
 .contenido-header {
-    /*width: 100%;
+    width: 100%;
     height: 700px;
      display: flex;
    flex-direction: column;
     justify-content: space-between;
-    text-align: center;*/
+    text-align: center;
 }
+*/
 
 @media (min-width: 768px) {
     /* .contenido-header {
@@ -165,16 +173,22 @@ h4 {
     }*/
 }
 
+
+/*
 .site-header.inicio {
-    /* background-image: url(../img/fondo-banner-corporamed-6.png);
+    width: 1200px;
+    height: 600px;
     background-position: center center;
     background-size: cover;
-    width: 1600px; */
-    width: 100%;
-    height: 90vh;
-    height: 680px;
     border-bottom: 14px solid #227c98;
-    margin-bottom: 8rem;
+    margin-bottom: 8rem; 
+}
+*************/
+
+.show-banner {
+    margin-left: 2.8px;
+    width: 100%;
+    height: 600px;
 }
 
 .contenido-header div h1 {
