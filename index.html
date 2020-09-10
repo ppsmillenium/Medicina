@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body>
@@ -60,10 +61,11 @@
             </div>
         </div>
 
-        <!-- TEST GITHUB -->
     </header>
-    <main class="contenedor seccion">
-        <h2 class="centrar-texto">Soluciones Avanzadas en Laboratorio Clínico</h2>
+    <main class="contenedor seccion saludo">
+        <h2 class="centrar-texto">
+            <div class="saludo-inicio"> Soluciones Avanzadas en Laboratorio Clínico</div>
+        </h2>
         <div class="iconos-nosotros">
             <div class="icono">
                 <img class="scale" src="img/laboratorio.svg" alt="tests">
@@ -147,23 +149,32 @@
         <section class="testimoniales">
             <h3 class="centrar-texto fw300 txt-blanco no-margen seccion">Logros</h3>
 
-            <div class="testimonial">
+            <div class="testimonial parallax-window" data-parallax="scroll" data-image-src="img/molecula-logros.jpg">
                 <blockquote class="block1 scale">
-                    Sirve a más de 8000 médicos de atención primaria y de especialidades. <br/> Ofrece más de 125 pruebas de diagnóstico especializadas, que incluyen la función digestiva, metabólica y endocrinología
+                    <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="">
+                        Sirve a más de 8000 médicos de atención primaria y de especialidades. <br/> Ofrece más de 125 pruebas de diagnóstico especializadas, que incluyen la función digestiva, metabólica y endocrinología
+                    </div>
                 </blockquote>
             </div>
-            <div class="testimonial">
+
+            <div class="testimonial parallax-window" data-parallax="scroll" data-image-src="img/molecula-logros.jpg">
                 <blockquote class="block2 scale">
-                    Ofrece una amplia variedad de pruebas.<br/> Su prueba insignia, es el test de ácidos orgánicos (OAT, por sus siglas en inglés) es una instantánea metabólica integral de la salud general, con 74 marcadores, todos ellos obtenidos a partir
-                    de una muestra de orina.
+                    <div data-aos="zoom-in" data-aos-offset="300" data-aos-delay="">
+                        Ofrece una amplia variedad de pruebas.<br/> Su prueba insignia, es el test de ácidos orgánicos (OAT, por sus siglas en inglés) es una instantánea metabólica integral de la salud general, con 74 marcadores, todos ellos obtenidos
+                        a partir de una muestra de orina.
+                    </div>
                 </blockquote>
             </div>
-            <div class="testimonial">
+
+            <div class="testimonial parallax-window" data-parallax="scroll" data-image-src="img/molecula-logros.jpg">
                 <blockquote class="block3 scale">
-                    Estos complementos dietéticos de alta calidad garantizan que el organismo reciba un suministro óptimo de nutrientes, especialmente en combinación con la terapia con microbiomas y la medicina mitocondrial regenerativa.
-                    <br/> También pueden ser utilizados en la terapia de simbiosis celular.
+                    <div data-aos="zoom-in" data-aos-offset="400" data-aos-delay="">
+                        Estos complementos dietéticos de alta calidad garantizan que el organismo reciba un suministro óptimo de nutrientes, especialmente en combinación con la terapia con microbiomas y la medicina mitocondrial regenerativa.
+                        <br/> También pueden ser utilizados en la terapia de simbiosis celular.
+                    </div>
                 </blockquote>
             </div>
+
         </section>
     </div>
 
@@ -204,15 +215,21 @@
 
     </footer>
 
-    <!-- Ejecuta cuando ha cargado el iframe -->
+
+    <!-- Ejecuta Personalizaciones -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/functions.js"></script>
+
+    <!-- Parallax --->
+    <script src="js/parallax.js-1.5.0/parallax.js"></script>
+
+    <!-- Animaciones en scroll --->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        /*function onMyFrameLoad() {
-
-                                            var clase = document.getElementById("position-banner");
-
-                                            clase.className = "show-banner";
-                                        };*/
+        AOS.init();
     </script>
+
 </body>
 
 </html>
