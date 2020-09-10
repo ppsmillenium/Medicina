@@ -90,6 +90,26 @@ h4 {
 }
 
 
+/* Zoom gradual bienvenida */
+
+@keyframes fullScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zoom {
+    animation-name: fullScale;
+    animation-duration: 2s;
+}
+
+
 /* Zoom imagen botón */
 
 @media (min-width: 800px) {
@@ -452,7 +472,7 @@ ol {
 }
 
 
-/* Partners */
+/**** Partners ****/
 
 @media (max-width: 1199px) {
     .seccion-inferior {
@@ -520,14 +540,17 @@ ol {
 }
 
 
-/* Destacado */
+/*** Destacado ***/
 
 .seccion-inferior .testimoniales {
     flex-basis: calc(40% - 2rem);
 }
 
+
+/** Parallax ***/
+
 .testimonial {
-    background-image: url(../img/fondo-moleculas-corporamed-claro.jpg);
+    /* background-image: url(../img/fondo-moleculas-corporamed-claro.jpg); */
     height: 43rem;
     font-size: 2rem;
     background-size: cover;
