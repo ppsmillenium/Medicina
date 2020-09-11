@@ -196,14 +196,17 @@ h4 {
 
 /*
 .site-header.inicio {
-    width: 1200px;
+    width: 100%;
     height: 600px;
     background-position: center center;
     background-size: cover;
     border-bottom: 14px solid #227c98;
-    margin-bottom: 8rem; 
+    margin-bottom: 8rem;
 }
-*************/
+*/
+
+
+/**************/
 
 .show-banner {
     margin-left: 2.8px;
