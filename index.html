@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portal Web Medicina</title>
+    <title>Menú Dinámico Web Medicina</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-menu.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -39,201 +40,318 @@
                 </div>
 
                 <!--- Menú normal -->
+
                 <nav>
                     <ul class="nav">
-                        <li><a href="pruebas.html">Lista de pruebas</a></li>
-                        <li><a href="complementos.html">Complementos</a>
-                            <ul>
-                                <li>
-                                    <a href="categorias.html"></a>Categorías</li>
-                            </ul>
+                        <li><a href="#">Lista de pruebas</a>
+
                         </li>
-                        <li><a href="area_privada.html">Área privada</a></li>
-                        <li><a href="contacto.html">Contactar</a></li>
+
+                        <li class="complementos"><a href="#">Complementos</a>
+
+                        </li>
+                        <li><a href="#">Área privada</a></li>
+                        <li><a href="#">Contactar</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-
-        <iframe id="position-banner" class="show-banner" src="https://ppsmillenium.github.io/Banner-Portal/" scrolling="no" frameborder="0" onload=""></iframe>
-
-
         <div class="contenedor">
-            <!--- *** BANNER ESTÁTICO ***                 
-            <div class="site-header inicio">
-                <img src="img/banner-header-sin_texto-14.png" alt="">
 
+            <!-- Menú dinámico -->
+
+            <div class="display-menu oculta-important">
+                <div class="width-categoria">
+                    <div class="desc-short-presentacion">
+                        <img class="animate__animated animate__zoomIn" src="img/Tisso-200.jpg" alt="Logo Tisso-200">
+                    </div>
+                    <div class="desc-short-cat1 oculta">
+                        <img class="animate__animated animate__zoomIn" src="img/Pro-Em-San-Tisso_1.jpg" width="220px" alt="Pro Em San Pro-Em-San-Tisso_1">
+                        <p class="animate__animated animate__zoomIn"><b> Probiótico a base de hierbas y extracto vegetal con microorganismos.</b></p>
+                    </div>
+                    <div class="desc-short-cat2 oculta  animate__animated animate__zoomIn">
+                        <img class="animate__animated animate__zoomIn" src="img/TISSO_Pro_Mucosa.jpg" width="200px" alt="Tisso_2">
+                        <p class="animate__animated animate__zoomIn"><b>La vitamina B2 (riboflavina) y la biotina ayudan a mantener las membranas mucosas en condiciones normales. </b> </p>
+                    </div>
+                    <div class="desc-short-cat3 oculta  animate__animated animate__zoomIn">
+                        <img class="animate__animated animate__zoomIn" src="img/TISSO_Pro_Agalostrum_frei.jpg" width="200px" alt="Tisso_2">
+                        <p class="animate__animated animate__zoomIn"><b>La vitamina D contribuye al funcionamiento normal del sistema inmunológico.</b></p>
+                    </div>
+                </div>
+
+                <div class="lista-categorias width-categoria">
+                    <div>
+                        <h5 class="min-margen header-decor">Laboratorios TISSO</h5>
+                        <!-- <p><b> Nuestros productos:</b></p> -->
+
+                        <div class="cat1">
+                            <p class="line-height-p animate__animated animate__backInDown"> <i class="fas fa-angle-right"></i><a href="#">PRO EM SAN PUR </a></p>
+                        </div>
+                        <div class="animate__animated animate__backInDown divider-cat"></div>
+                        <div class="cat2">
+                            <p class="line-height-p animate__animated animate__backInDown"> <i class="fas fa-angle-right"></i><a href="#">PRO MUCOSA</a></p>
+                        </div>
+                        <div class="animate__animated animate__backInDown divider-cat"></div>
+                        <div class="cat3">
+                            <p class="line-height-p animate__animated animate__backInDown"> <i class="fas fa-angle-right"></i><a href="#">PRO AGALOSTRUM</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="descripcion-categorias width-categoria">
+                    <p class="header-decor"> <b> Descripción:</b></p>
+                    <p class="desc-long-presentacion animate__animated animate__zoomIn ">
+                        TISSO Naturprodukte es sinónimo de complementos alimenticios de alta calidad.
+                    </p>
+                    <div class="divider animate__animated animate__zoomIn desc-long-presentacion"></div>
+                    <p class="desc-long-presentacion animate__animated animate__zoomIn">
+                        Desde que la empresa fue fundada en 1999, ha ido desarrollando y produciendo sus productos en Wenden, en la región de Sauerland. Todas las fórmulas forman parte del concepto de dieta integral, científicamente fundamentado y bien establecida en la práctica
+                        terapéutica.
+                    </p>
+
+                    <p class="desc-long-cat1 oculta animate__animated animate__zoomIn">
+                        <b>Ingredientes:</b><br/>31 cepas de microorganismos activos en dosis altas, en particular Bifidobacterium y Lactobacillus bacteria <br/> Semillas de comino negro (extracto), extracto de semilla de uva y Ling Zhi (hongo reishi)
+                    </p>
+
+                    <p class="desc-long-cat2 oculta animate__animated animate__zoomIn">
+                        <b> Contenido:</b> <br/> 360 cápsulas = 185 g <br/>
+                    </p>
+                    <div class="divider animate__animated animate__zoomIn desc-long-cat2 oculta"></div>
+                    <p class="desc-long-cat2 oculta animate__animated animate__zoomIn">
+                        <b>Acción:</b> <br/> Las membranas mucosas actúan como una barrera, proporcionando una capa protectora natural para el cuerpo. Desempeñan un papel particularmente importante en el tracto gastrointestinal, así como en la boca, nariz
+                        y áreas vaginales.
+                    </p>
+
+                    <p class="desc-long-cat3 oculta animate__animated animate__zoomIn">
+                        <b>Contenido:</b><br/>120 cápsulas = 86 g<br/>
+                    </p>
+                    <div class="divider animate__animated animate__zoomIn desc-long-cat3 oculta"></div>
+                    <p class="desc-long-cat3 oculta animate__animated animate__zoomIn">
+
+                        <b>Acción:</b><br/> El calostro que se encuentra en Pro Agalostrum se deriva de las primeras 12 horas de leche de vacas alemanas. Contiene proteínas, enzimas, vitaminas, minerales, factores de crecimiento, aminoácidos y anticuerpos,
+                        aunque a veces en cantidades mayores.
+                    </p>
+
+                </div>
             </div>
-            --->
+
         </div>
+
 
     </header>
-    <main class="contenedor seccion saludo">
-        <h2 class="centrar-texto">
-            <div class="saludo-inicio"> Soluciones Avanzadas en Laboratorio Clínico</div>
-        </h2>
-        <div class="iconos-nosotros">
-            <div class="icono">
-                <img class="scale" src="img/laboratorio.svg" alt="tests">
-                <h3 class="min-line-height">Tests</h3>
-                <p>Un menú completo de nuestras pruebas de diagnóstico, incluídas las descripciones de las pruebas, los requisitos y las instrucciones del kit</p>
-            </div>
-            <div class="icono">
-                <img class="scale" src="img/molecula-new.svg" alt="complementos">
-                <h3 class="min-line-height">Complementos</h3>
-                <p>Estos productos de alta calidad están destinados a proteger y fortalecer el sistema inmunológico. Entra para ver las distintas categorías.</p>
-            </div>
-            <div class="icono">
-                <img class="scale" src="img/computadora-segura.svg" alt="area_privada">
-                <h3 class="min-line-height">Área privada</h3>
-                <p>Corporamed te da la posibilidad de solicitar cualquiera de nuestros tests disponibles para tus pacientes. Además, te mantendremos informado de todas las novedades para que estés al día</p>
-            </div>
-        </div>
-    </main>
-
-    <!-- Saber más sobre Tests -->
-
-    <section class="imagen-contacto">
-        <div class="contenedor contenido-contacto">
-            <div></div>
-            <div>
-                <h3>¿Cómo pedir un Test?</h3>
-                <p>Los proveedores autorizados pueden pedir tests de laboratorio</p>
-                <a href="pruebas.html" class="boton boton-amarillo">Aprende cómo</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Partners Corporamed -->
-
-    <div class="seccion-inferior contenedor seccion">
-        <section class="blog">
-            <h3 class="centrar-texto fw300 no-margen seccion">Nuestros Partners</h3>
-
-            <article class="entrada-blog">
-                <div class="imagen">
-                    <img src="img/logos/logo_genova.png" alt="genova">
-                </div>
-                <div class="texto-entrada">
-                    <h4>Genova Diagnostics</h4>
-                    <p>Genova Diagnostics es un laboratorio reconocido internacionalmente como laboratorio pionero y líder en el desarrollo de pruebas de laboratorio tanto metabólicas, de tóxicos como nutricionales, siendo su misión la de mejorar la salud
-                        del individuo, proporcionando analíticas que identifican desequilibrios nutricionales y toxicidades que dan cabida y propician las enfermedades crónicas.</p>
-                    <a href="blog.html" class="boton boton-partners">Saber más</a>
-                </div>
-
-
-            </article>
-            <article class="entrada-blog">
-                <div class="imagen">
-                    <img src="img/logos/TheGreatPlains-logo_400.jpg" alt="The Great Plains">
-                </div>
-                <div class="texto-entrada">
-                    <h4>The Great Plains</h4>
-                    <p>Great Plains Laboratory, Inc. es un laboratorio clínico con una larga trayectoría y experiencia, que ofrece pruebas de factores metabólicos, nutricionales y tóxicos, en afecciones crónicas como el autismo, déficit de atención con o
-                        sin hiperactividad, fibromialgia, trastornos gastrointestinales y neuropsiquiátricos.</p>
-                    <a href="blog.html" class="boton boton-partners">Saber más</a>
-
-                </div>
-            </article>
-
-            <article class="entrada-blog">
-                <div class="imagen">
-                    <img src="img/logos/Tisso-200.jpg" alt="Tisso">
-                </div>
-                <div class="texto-entrada">
-                    <h4>Tisso</h4>
-                    <p>Hablar de TISSO Naturprodukte es hablar de complementos alimenticios de alta calidad, que combinan lo mejor de la naturaleza y de la calidad alemana. Todas las fórmulas forman parte de su concepto de dieta holística, científicamente
-                        fundamentado y bien establecido en la práctica terapéutica.</p>
-                    <a href="blog.html" class="boton boton-partners">Saber más</a>
-                </div>
-            </article>
-
-        </section>
-
-        <!-- Destacado Partners -->
-
-        <section class="testimoniales">
-            <h3 class="centrar-texto fw300 txt-blanco no-margen seccion">Logros</h3>
-
-            <div class="testimonial parallax-window" data-parallax="scroll" data-image-src="img/molecula-logros.jpg">
-                <blockquote class="block1 scale">
-                    <div data-aos="zoom-in" data-aos-offset="200" data-aos-delay="">
-                        Sirve a más de 8000 médicos de atención primaria y de especialidades. <br/> Ofrece más de 125 pruebas de diagnóstico especializadas, que incluyen la función digestiva, metabólica y endocrinología
-                    </div>
-                </blockquote>
-            </div>
-
-            <div class="testimonial parallax-window" data-parallax="scroll" data-image-src="img/molecula-logros.jpg">
-                <blockquote class="block2 scale">
-                    <div data-aos="zoom-in" data-aos-offset="300" data-aos-delay="">
-                        Ofrece una amplia variedad de pruebas.<br/> Su prueba insignia, es el test de ácidos orgánicos (OAT, por sus siglas en inglés) es una instantánea metabólica integral de la salud general, con 74 marcadores, todos ellos obtenidos
-                        a partir de una muestra de orina.
-                    </div>
-                </blockquote>
-            </div>
-
-            <div class="testimonial parallax-window" data-parallax="scroll" data-image-src="img/molecula-logros.jpg">
-                <blockquote class="block3 scale">
-                    <div data-aos="zoom-in" data-aos-offset="400" data-aos-delay="">
-                        Estos complementos dietéticos de alta calidad garantizan que el organismo reciba un suministro óptimo de nutrientes, especialmente en combinación con la terapia con microbiomas y la medicina mitocondrial regenerativa.
-                        <br/> También pueden ser utilizados en la terapia de simbiosis celular.
-                    </div>
-                </blockquote>
-            </div>
-
-        </section>
-    </div>
-
-    <!-- Próximamente -->
-
-    <section>
-        <div class="proximamente proximamente-imagen ">
-            <div class="icono-prox "><img src="img/webinar.svg " alt=" "></div>
-            <div class="proximamente-txt ">
-                <h2 class="centrar-texto no-margen">PRÓXIMAMENTE</h2>
-                <h3 class="centrar-texto">Clases Online</h3>
-                <p class="no-margen">¿Quieres recibir información sobre ésta u otras novedades?</p>
-                <a class="boton boton-amarillo prox-centrar-btn " href="contacto.html ">Apuntarme</a>
-            </div>
-            <div class="icono-prox medium-device "><img src="img/webinar.svg " alt=" "></div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-
-    <footer class="site-footer seccion ">
-        <div class="contenedor contenedor-footer ">
-            <div class="navegacion ">
-                <ul>
-                    <li><a href="privacidad.html ">Política de Privacidad</a></li>
-                    <li><a href="cookies.html ">Cookies</a></li>
-                </ul>
-            </div>
-            <div class="rrss">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-linkedin"></i>
-                <p class="copyright ">Corporamed todos los derechos reservados 2020&copy;</p>
-
-            </div>
-        </div>
-
-
-    </footer>
-
-
-    <!-- Ejecuta Personalizaciones -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/functions.js"></script>
-
-    <!-- Parallax --->
-    <script src="js/parallax.js-1.5.0/parallax.js"></script>
-
-    <!-- Animaciones en scroll --->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        AOS.init();
+        $(document).ready(function() {
+            $(".cat1 a").hover(function() {
+
+
+                /* Cat 1 */
+
+                $(".desc-short-presentacion").addClass("oculta");
+                $(".desc-long-presentacion").addClass("oculta");
+
+                /* Descripción corta cat1 */
+                $(".desc-short-cat1").toggleClass("d-block", true);
+
+                /* Descripción larga cat1 */
+                $(".desc-long-cat1").toggleClass("d-block", true);
+
+                /* Desactivar los demás */
+
+                $(".desc-short-cat2").toggleClass("d-block", false);
+                $(".desc-long-cat2").toggleClass("d-block", false);
+
+                $(".desc-short-cat3").toggleClass("d-block", false);
+                $(".desc-long-cat3").toggleClass("d-block", false);
+
+
+            });
+
+
+
+            $(".cat2 a").hover(function() {
+
+
+                $(".desc-short-presentacion").addClass("oculta");
+                $(".desc-long-presentacion").addClass("oculta");
+
+
+                /* Cat 2 */
+
+                /* Descripción corta cat2 */
+                $(".desc-short-cat2").toggleClass("d-block", true);
+
+                /* Descripción larga cat2 */
+                $(".desc-long-cat2").toggleClass("d-block", true);
+
+                /* Desactivar resto */
+
+                $(".desc-short-cat1").toggleClass("d-block", false);
+                $(".desc-long-cat1").toggleClass("d-block", false);
+
+                $(".desc-short-cat3").toggleClass("d-block", false);
+                $(".desc-long-cat3").toggleClass("d-block", false);
+
+
+            });
+
+            $(".cat3 a").hover(function() {
+
+
+                $(".desc-short-presentacion").addClass("oculta");
+                $(".desc-long-presentacion").addClass("oculta");
+
+
+                /* Cat 3 */
+
+                /* Descripción corta cat3 */
+                $(".desc-short-cat3").toggleClass("d-block", true);
+
+                /* Descripción larga cat3 */
+                $(".desc-long-cat3").toggleClass("d-block", true);
+
+                // Desactivar resto
+
+                $(".desc-short-cat1").toggleClass("d-block", false);
+                $(".desc-long-cat1").toggleClass("d-block", false);
+
+                $(".desc-short-cat2").toggleClass("d-block", false);
+                $(".desc-long-cat2").toggleClass("d-block", false);
+
+
+            });
+
+            // Desplazar horizontalmente on hover
+
+            // Todo a cero
+
+            $(".cat1").animate({
+                left: '0'
+            }, 200);
+
+
+            $(".cat2").animate({
+                left: '0'
+            }, 200);
+
+
+            $(".cat3").animate({
+                left: '0'
+            }, 200);
+
+
+            // Cat1
+
+            $(".cat1").hover(function() {
+
+                // Desactivo resto
+
+
+                $(".cat2").animate({
+                    left: '0'
+
+                }, 200);
+
+
+                $(".cat3").animate({
+                    left: '0'
+
+                }, 200);
+
+                // Propiedades
+
+                $(".cat1").css({
+                    "width": '150px',
+                    "position": 'relative'
+                });
+
+
+                // Activo actual
+
+
+                $(".cat1").animate({
+                    left: '15'
+
+                });
+
+            });
+
+            // Cat2
+
+            $(".cat2").hover(function() {
+
+                $(".cat2").css({
+                    "width": '150px',
+                    "position": 'relative'
+                });
+
+                // Desactivo resto
+
+                $(".cat1").animate({
+                    left: '0'
+                }, 200);
+
+
+                $(".cat3").animate({
+                    left: '0'
+                }, 200);
+
+                // Activo actual
+
+                $(".cat2").animate({
+                    left: '15'
+
+                });
+
+            });
+
+
+            // Cat3
+
+            $(".cat3").hover(function() {
+
+                $(".cat3").css({
+                    "width": '200px',
+                    "position": 'relative'
+                });
+
+                // Desactivo resto
+
+                $(".cat1").animate({
+                    left: '0'
+                }, 200);
+
+
+                $(".cat2").animate({
+                    left: '0'
+                }, 200);
+
+                // Activo actual
+
+                $(".cat3").animate({
+                    left: '15'
+
+                });
+
+            });
+
+        });
+
+        // Trigger menú dinámico complementos
+
+        $("li.complementos").click(function() {
+
+            $("li.complementos a").toggleClass("btn-amarillo-menu", "btn-blanco-menu");
+
+            /* $("li.complementos a").css({
+                 "color": "yellow"
+             });*/
+
+            $(".display-menu").toggleClass("oculta-important", "d-block");
+            //console.log("funciona");
+
+
+        });
     </script>
 
 </body>
