@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -41,15 +43,15 @@
                 <!--- Menú normal -->
                 <nav>
                     <ul class="nav">
-                        <li><a href="pruebas.html">Lista de pruebas</a></li>
-                        <li><a href="complementos.html">Complementos</a>
-                            <ul>
-                                <li>
-                                    <a href="categorias.html"></a>Categorías</li>
-                            </ul>
+                        <li><a href="#">Lista de pruebas</a>
+
                         </li>
-                        <li><a href="area_privada.html">Área privada</a></li>
-                        <li><a href="contacto.html">Contactar</a></li>
+
+                        <li class="complementos"><a href="#">Complementos</a>
+
+                        </li>
+                        <li><a href="#">Área privada</a></li>
+                        <li><a href="#">Contactar</a></li>
                     </ul>
                 </nav>
             </div>
@@ -59,12 +61,85 @@
 
 
         <div class="contenedor">
-            <!--- *** BANNER ESTÁTICO ***                 
-            <div class="site-header inicio">
-                <img src="img/banner-header-sin_texto-14.png" alt="">
 
+            <!-- Menú dinámico -->
+
+            <div class="display-menu oculta-important">
+                <div class="width-categoria">
+                    <div class="desc-short-presentacion">
+                        <img class="animate__animated animate__zoomIn" src="img/logos/Tisso-200.jpg" alt="Logo Tisso-200">
+                    </div>
+                    <div class="desc-short-cat1 oculta">
+                        <img class="animate__animated animate__zoomIn" src="img/Pro-Em-San-Tisso_1.jpg" width="220px" alt="Pro Em San Pro-Em-San-Tisso_1">
+                        <p class="animate__animated animate__zoomIn"><b> Probiótico a base de hierbas y extracto vegetal con microorganismos.</b></p>
+                    </div>
+                    <div class="desc-short-cat2 oculta  animate__animated animate__zoomIn">
+                        <img class="animate__animated animate__zoomIn" src="img/TISSO_Pro_Mucosa.jpg" width="200px" alt="Tisso_2">
+                        <p class="animate__animated animate__zoomIn"><b>La vitamina B2 (riboflavina) y la biotina ayudan a mantener las membranas mucosas en condiciones normales. </b> </p>
+                    </div>
+                    <div class="desc-short-cat3 oculta  animate__animated animate__zoomIn">
+                        <img class="animate__animated animate__zoomIn" src="img/TISSO_Pro_Agalostrum_frei.jpg" width="200px" alt="Tisso_2">
+                        <p class="animate__animated animate__zoomIn"><b>La vitamina D contribuye al funcionamiento normal del sistema inmunológico.</b></p>
+                    </div>
+                </div>
+
+                <div class="lista-categorias width-categoria">
+                    <div>
+                        <h5 class="min-margen header-decor">Laboratorios TISSO</h5>
+                        <!-- <p><b> Nuestros productos:</b></p> -->
+
+                        <div class="cat1">
+                            <p class="line-height-p animate__animated animate__backInDown"> <i class="fas fa-angle-right"></i><a href="#">PRO EM SAN PUR </a></p>
+                        </div>
+                        <div class="animate__animated animate__backInDown divider-cat"></div>
+                        <div class="cat2">
+                            <p class="line-height-p animate__animated animate__backInDown"> <i class="fas fa-angle-right"></i><a href="#">PRO MUCOSA</a></p>
+                        </div>
+                        <div class="animate__animated animate__backInDown divider-cat"></div>
+                        <div class="cat3">
+                            <p class="line-height-p animate__animated animate__backInDown"> <i class="fas fa-angle-right"></i><a href="#">PRO AGALOSTRUM</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="descripcion-categorias width-categoria">
+                    <p class="header-decor"> <b> Descripción:</b></p>
+                    <p class="desc-long-presentacion animate__animated animate__zoomIn ">
+                        TISSO Naturprodukte es sinónimo de complementos alimenticios de alta calidad.
+                    </p>
+                    <div class="divider animate__animated animate__zoomIn desc-long-presentacion"></div>
+                    <p class="desc-long-presentacion animate__animated animate__zoomIn">
+                        Desde que la empresa fue fundada en 1999, ha ido desarrollando y produciendo sus productos en Wenden, en la región de Sauerland. Todas las fórmulas forman parte del concepto de dieta integral, científicamente fundamentado y bien establecida en la práctica
+                        terapéutica.
+                    </p>
+
+                    <p class="desc-long-cat1 oculta animate__animated animate__zoomIn">
+                        <b>Ingredientes:</b><br/>31 cepas de microorganismos activos en dosis altas, en particular Bifidobacterium y Lactobacillus bacteria <br/> Semillas de comino negro (extracto), extracto de semilla de uva y Ling Zhi (hongo reishi)
+                    </p>
+
+                    <p class="desc-long-cat2 oculta animate__animated animate__zoomIn">
+                        <b> Contenido:</b> <br/> 360 cápsulas = 185 g <br/>
+                    </p>
+                    <div class="divider animate__animated animate__zoomIn desc-long-cat2 oculta"></div>
+                    <p class="desc-long-cat2 oculta animate__animated animate__zoomIn">
+                        <b>Acción:</b> <br/> Las membranas mucosas actúan como una barrera, proporcionando una capa protectora natural para el cuerpo. Desempeñan un papel particularmente importante en el tracto gastrointestinal, así como en la boca, nariz
+                        y áreas vaginales.
+                    </p>
+
+                    <p class="desc-long-cat3 oculta animate__animated animate__zoomIn">
+                        <b>Contenido:</b><br/>120 cápsulas = 86 g<br/>
+                    </p>
+                    <div class="divider animate__animated animate__zoomIn desc-long-cat3 oculta"></div>
+                    <p class="desc-long-cat3 oculta animate__animated animate__zoomIn">
+
+                        <b>Acción:</b><br/> El calostro que se encuentra en Pro Agalostrum se deriva de las primeras 12 horas de leche de vacas alemanas. Contiene proteínas, enzimas, vitaminas, minerales, factores de crecimiento, aminoácidos y anticuerpos,
+                        aunque a veces en cantidades mayores.
+                    </p>
+
+                </div>
             </div>
-            --->
+
+
         </div>
 
     </header>
@@ -108,7 +183,7 @@
 
     <div class="seccion-inferior contenedor seccion">
         <section class="blog">
-            <h3 class="centrar-texto fw300 no-margen seccion">Nuestros Partners</h3>
+            <h3 class="centrar-texto fw300 seccion">Nuestros Partners</h3>
 
             <article class="entrada-blog">
                 <div class="imagen">

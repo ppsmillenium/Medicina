@@ -14,6 +14,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
+    /* Color de Fondo */
 }
 
 
@@ -53,10 +54,6 @@ h6 {
     font-size: 1.8rem;
 }
 
-.no-margen {
-    margin: 0;
-}
-
 
 /**** Utilidades ****/
 
@@ -89,19 +86,9 @@ h6 {
     color: #ffffff!important;
 }
 
-
-/*
-.marginCero {
-    margin: 0;
-}
-*/
-
 .oculta {
     display: none;
 }
-
-
-/* Menú dinámico */
 
 .oculta-important {
     display: none!important;
@@ -400,14 +387,12 @@ h6 {
 }
 
 .display-menu {
-    position: relative;
-    margin-top: -610px;
     background-color: white;
     border: 2px #0d2139 solid;
     display: flex;
     justify-content: space-evenly;
     padding-top: 50px;
-    opacity: 0.97;
+    opacity: 1;
 }
 
 .desc-short-cat1 p {
