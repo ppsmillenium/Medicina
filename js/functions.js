@@ -9,17 +9,25 @@ $(document).ready(function() {
 
         /* Se desplaza hasta saludo para ejecutar la animación de bienvenida */
 
+        var scroll = $(window).scrollTop();
+
         var posicion = $(".saludo").offset().top;
 
         posicion = posicion - 350;
 
-        $("html, body").animate({
+        console.log("scroll: ", scroll, "posicion: ", posicion);
 
-            scrollTop: posicion
+        /* Sólo se ejecuta al comienzo */
 
-        }, 1000, function bienvenida() {
-            $(".saludo-inicio").addClass("zoom");
-        });
+        if (posicion > scroll) {
+            $("html, body").animate({
+
+                scrollTop: posicion
+
+            }, 1000, function bienvenida() {
+                $(".saludo-inicio").addClass("zoom");
+            });
+        }
     }
 
     /** Banner dinámico */
@@ -103,7 +111,7 @@ $(document).ready(function() {
 
     });
 
-    // Desplazar horizontalmente on hover
+    // Desplazar horizontalmente productos menu
 
     // Todo a cero
 
@@ -231,6 +239,40 @@ $("li.complementos").click(function() {
 
 
     $(".display-menu").toggleClass("oculta-important", "d-block");
+    /*
+        $(".display-menu").fadeIn().css({
+            // position: 'relative'
+        }).animate({
+            top: '5'
+        }, function() {
+            //callback
+
+        }).animate({
+            top: '0'
+        }, function() {
+            $(".display-menu").css('display', 'flex')
+        });
+    */
+
+    animaMenu = $(".display-menu");
+
+    var numFuncionesEnCola = animaMenu.queue().length;
+
+    animaMenu.fadeIn().animate({
+        top: '5'
+
+
+    }, console.log('Ejecuciones pendientes', numFuncionesEnCola));
+
+    // Cola de efectos a cero
+    animaMenu.stop(false, true);
+
+    animaMenu.animate({
+        top: '0'
+    });
+
+    animaMenu.css('display', 'flex');
+
 
 
 });
